@@ -24,7 +24,7 @@ Install the required dependencies:
 pip install -r requirements.txt
 This will install Flask, Scikit-learn, TensorFlow, and other necessary libraries for the project.
 
-2. Train the Model
+### 2. Train the Model ###
 The project uses a machine learning model to predict shipping rates. To train the model, make sure to have the required dataset available. You can use a dataset with historical shipping data (package weight, distance, shipping cost). Follow these steps to train the model:
 
 Preprocess the data, including cleaning and feature engineering.
