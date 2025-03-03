@@ -1,15 +1,9 @@
-document.getElementById("predictionForm").addEventListener("submit", async function(event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+    const weightInput = document.querySelector('#weight');
+    const distanceInput = document.querySelector('#distance');
 
-    let weight = document.getElementById("weight").value;
-    let distance = document.getElementById("distance").value;
-
-    let response = await fetch("/predict", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ weight: weight, distance: distance })
+    form.addEventListener('submit', function (e) {
+        // Optionally, you can do some validation or dynamic behavior here
     });
-
-    let data = await response.json();
-    document.getElementById("result").innerText = data.shipping_rate ? `$${data.shipping_rate}` : "Error";
 });

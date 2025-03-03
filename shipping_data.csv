@@ -1,4 +1,4 @@
-weight,distance,shipping_rate
+weight,distance,predicted_rate
 2,50,10
 5,100,20
 8,150,35
